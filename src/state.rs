@@ -1,9 +1,9 @@
 use bevy::state::state::States;
 
-#[derive(Debug, Default, States, Clone, Hash, Eq, PartialEq)]
+#[derive(Clone, Copy, Default, Eq, PartialEq, Debug, Hash, States)]
 pub enum GameState {
+    // Loading,
     #[default]
-    Loading,
     Menu,
     Playing,
     Ended,
