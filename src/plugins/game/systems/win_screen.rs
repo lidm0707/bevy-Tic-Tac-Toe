@@ -7,10 +7,10 @@ use crate::{
 
 pub fn setup_win_screen(mut commands: Commands, winner: Res<Winner>) {
     let text = match winner.0 {
-        Some('X') => "Player X Wins!",
-        Some('O') => "Player O Wins!",
-        Some('T') => "Tie!",
-        _ => "No Winner",
+        Some('X') => "Player X Wins! Enter to Restart",
+        Some('O') => "Player O Wins! Enter to Restart",
+        Some('T') => "Tie! Enter to Restart",
+        _ => "No Winner Enter to Restart",
     };
 
     commands.spawn((
